@@ -360,8 +360,6 @@ class Paperang:
         N = 34
         rows = int(ceil(len(text) / N))
 
-        print(N, rows, size, text)
-
         font = ImageFont.truetype("courier.ttf", size)
         img = Image.new("RGBA", (384, size * rows), (0, 0, 0))
         draw = ImageDraw.Draw(img)
